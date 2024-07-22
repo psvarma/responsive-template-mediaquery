@@ -1,0 +1,136 @@
+
+@media (min-width:640px) {
+    .banner__content h1 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 56px;
+    }
+    .banner__content p {
+        margin: 5px 0 20px 0;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    
+}
+
+
+@media (min-width:768px){
+    .container {
+        max-width: 720px;
+    }
+    .section__clients {
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+    .icon_container,
+    #services  .section_row {
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .imageBlock {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+      }
+    .section_form form {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:1.5rem;
+    }
+    .form-control{
+        margin:0;
+    }
+    input[name="name"]{
+        grid-column: 1;
+    }
+    input[name="email"] {
+        grid-column: 2;
+    }
+    input[name="subject"]{
+        grid-column: 1 / span 2;
+    }
+    textarea[name="message"] {
+        grid-column: 1 / span 2;
+    }
+    .team_row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media (min-width:991px){
+    .imageBlock {
+        grid-template-columns: repeat(3,1fr);
+      }
+      
+    .icons{
+        font-size: 2.4rem;
+        color: blue;
+        position: absolute;
+        right:5%;
+        cursor: pointer;
+        display: none;
+    }
+    .navbar {
+        position:relative;
+        display: flex;
+        justify-content: right;
+    }
+    .navbar a {
+        font-size: 1.15rem;
+        text-decoration: none;
+        margin-left: 2.5rem;
+    }
+    .navbar a {
+        color: var(--accent-color);
+    }
+    .container{
+        max-width: 960px;
+    }
+    .section__clients {
+        grid-template-columns: repeat(6,1fr);
+    }
+    #banner .section_content,
+    #stats .section__row, .stat-data, #alt-services .section_row {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .banner__image {
+        order: 2;
+    }
+    .team_row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    .pricing_row {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem;
+      }
+    .faq_item {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 1.5rem;
+      }
+    .faq_item h3 {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+    .section_contact {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+    #services  .section_row,.imageBlock {
+        grid-template-columns: repeat(4,1fr);
+      }
+}
