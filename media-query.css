@@ -82,7 +82,7 @@
         text-decoration: none;
         margin-left: 2.5rem;
     }
-    .navbar a {
+    .navbar a:hover {
         color: var(--accent-color);
     }
     .container{
